@@ -95,7 +95,7 @@ pro realhtanalysis, dir, site, hhmm_str, hour, minute, farr, harr, freqs, height
       if hour lt 10 then hrstr = '0' + string(format = '(i1)',hour) else hrstr = string(format = '(i2)',hour)
       if minute lt 10 then minstr = '0' + string(format = '(i1)',minute) else minstr = string(format = '(i2)',minute)
      ; ccommand = 'copy c:\rsi\idl52\polout.t c:\cdata\'+strmid(dir,4,1) + months(fix(strmid(dir,5,2))-1)+$
-      ccommand = 'copy polout.t c:\cdata\'+strmid(dir,4,1) + months(fix(strmid(dir,5,2))-1)+$
+      ccommand = 'copy out.dat c:\cdata\'+strmid(dir,4,1) + months(fix(strmid(dir,5,2))-1)+$
                     strmid(dir,7,2) + hrstr + minstr + '.pol'
       spawn, ccommand
     nofile:                             ;jump here if unable to open file polout.t
