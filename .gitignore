@@ -1,0 +1,17 @@
+*.log
+build.ninja
+inold.dat
+insingle.dat
+oldsample.a
+polout_correct.t
+polout.t
+*.ninja_log
+*.ninja_log*.cmake
+CMakeCache.txt
+CTestTestfile.cmake
+Makefile
+CMakeFiles/
+build/
+cmake_install.cmake
+polan.exe
+polan

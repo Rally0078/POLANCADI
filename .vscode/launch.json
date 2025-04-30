@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    {
+        "version": "0.2.0",
+        "configurations": [
+          {
+            "name": "Debug Fortran (gdb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "make",
+            "program": "${workspaceFolder}/polan",
+            "cwd":     "${workspaceFolder}",
+            "args": [],
+            "environment": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+              {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+              }
+            ]
+          }, 
+          {
+            "name": "Debug Fortran CMake (gdb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "CMake: clean rebuild",
+            "program": "${workspaceFolder}\\polan.exe",
+            "cwd":     "${workspaceFolder}",
+            "args": [],
+            "environment": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+              {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+              }
+            ]
+          }
+        ]
+    }
+}
