@@ -36,9 +36,9 @@ C-------------------------------------------------------------------------------
 !     Fixed input name to receive input from IDL
 !     See in.dat for the compatible format
 
-      datin = 'in.dat'
+      datin = 'a.a'
       OPEN (UNIT=1, FILE=datin, STATUS='OLD')
-      OPEN (UNIT=2, FILE='out.dat')
+      OPEN (UNIT=2, FILE='POLOUT.T')
       write (2,40) datin, dat
 40    format (' P O L A N    of  FEBRUARY 1993.     ',
      &        'Data file: ',a15, '   Run: ',A8,'.')
